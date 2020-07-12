@@ -8,7 +8,7 @@
             </run>
         </groups>
         <packages>
-            <package name="com.maltsau.maksim.webcrawler.integration"/>
+            <package name="com.kuhar.nikolai.webcrawler.integration"/>
         </packages>
     </test>
 </suite>
