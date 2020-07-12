@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Integration tests suite" verbose="1">
+    <test name="test groups">
+        <groups>
+            <run>
+                <include name="integration"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.maltsau.maksim.webcrawler.integration"/>
+        </packages>
+    </test>
+</suite>

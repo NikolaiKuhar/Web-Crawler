@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+    <context:annotation-config/>
+    <context:component-scan base-package="com.kuhar.nikolai.webcrawler"/>
+
+    <util:list id="propertyOverrideLocations" value-type="java.lang.String">
+        <value>override.properties</value>
+        <value>file:///webcrawler-config/webcrawler-override.properties</value>
+    </util:list>
+
+    <bean id="webCrawlerOverrideConfigurer" class="org.springframework.beans.factory.config.PropertyOverrideConfigurer">
+        <property name="locations" ref="propertyOverrideLocations"/>
+        <property name="ignoreInvalidKeys" value="true"/>
+        <property name="ignoreResourceNotFound" value="false"/>
+    </bean>
+
+</beans>
