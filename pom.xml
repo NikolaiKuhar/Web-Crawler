@@ -16,7 +16,7 @@
     <org.springframework.version>5.2.7.RELEASE</org.springframework.version>
     <apache.httpclient5.version>5.0</apache.httpclient5.version>
     <slf4j.log4j12.version>1.7.30</slf4j.log4j12.version>
-    <apache.httpclient.version>4.5.12</apache.httpclient.version>
+    <apache.httpclient.version>4.5.13</apache.httpclient.version>
     <jsoup.version>1.13.1</jsoup.version>
     <testng.version>7.1.0</testng.version>
     <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
