@@ -13,7 +13,7 @@
     <maven.compiler.target>1.7</maven.compiler.target>
 
     <apache.commons.lang.version>3.10</apache.commons.lang.version>
-    <org.springframework.version>5.2.7.RELEASE</org.springframework.version>
+    <org.springframework.version>5.2.20.RELEASE</org.springframework.version>
     <apache.httpclient5.version>5.0</apache.httpclient5.version>
     <slf4j.log4j12.version>1.7.30</slf4j.log4j12.version>
     <apache.httpclient.version>4.5.12</apache.httpclient.version>
